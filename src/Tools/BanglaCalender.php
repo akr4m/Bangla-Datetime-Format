@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the EasyBanglaDate package.
+ * This file is part of the BanglaDatetimeFormat package.
  *
  * Copyright (c) 2015 Roni Saha
  *
@@ -10,7 +10,7 @@
  */
 
 
-namespace EasyBanglaDate\Tools;
+namespace BanglaDatetimeFormat\Tools;
 
 
 class BanglaCalender

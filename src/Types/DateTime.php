@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the EasyBanglaDate package.
+ * This file is part of the BanglaDatetimeFormat package.
  *
  * Copyright (c) 2015 Roni Saha
  *
@@ -9,9 +9,9 @@
  * with this source code in the file LICENSE.
  */
 
-namespace EasyBanglaDate\Types;
+namespace BanglaDatetimeFormat\Types;
 
-use EasyBanglaDate\Common\BaseDateTime;
+use BanglaDatetimeFormat\Common\BaseDateTime;
 
 class DateTime extends BaseDateTime
 {

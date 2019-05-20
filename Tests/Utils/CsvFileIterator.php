@@ -1,6 +1,6 @@
 <?php
 
-namespace EasyBanglaDateTests\Utils;
+namespace BanglaDatetimeFormatTests\Utils;
 
 class CsvFileIterator implements \Iterator {
     protected $file;

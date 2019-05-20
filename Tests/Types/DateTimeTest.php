@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the EasyBanglaDate package.
+ * This file is part of the BanglaDatetimeFormat package.
  *
  * Copyright (c) 2015 Roni Saha
  *
@@ -10,10 +10,10 @@
  */
 
 
-namespace EasyBanglaDateTests\Types;
+namespace BanglaDatetimeFormatTests\Types;
 
-use EasyBanglaDateTests\Utils\CsvFileIterator;
-use EasyBanglaDate\Types\DateTime;
+use BanglaDatetimeFormatTests\Utils\CsvFileIterator;
+use BanglaDatetimeFormat\Types\DateTime;
 use PHPUnit\Framework\TestCase;
 
 class DateTimeTest extends TestCase

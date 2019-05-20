@@ -12,7 +12,7 @@
          colors="true">
 
     <testsuites>
-        <testsuite name="EasyBanglaDate test suite">
+        <testsuite name="BanglaDatetimeFormat test suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>

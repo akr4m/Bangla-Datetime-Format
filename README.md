@@ -23,8 +23,8 @@ Synopsis
 
 ```php
 <?php
-use EasyBanglaDate\Types\BnDateTime;
-use EasyBanglaDate\Types\DateTime as EnDateTime;
+use BanglaDatetimeFormat\Types\BnDateTime;
+use BanglaDatetimeFormat\Types\DateTime as EnDateTime;
 
 require 'autoload.php'
 
@@ -64,24 +64,24 @@ require_once 'PATH_TO_LIBRARY/autoload.php';
 
 ```
 
-And in either case, I'd suggest using an alias for `EasyBanglaDate\Types\DateTime` Class to distinguish between native DateTime Class.
+And in either case, I'd suggest using an alias for `BanglaDatetimeFormat\Types\DateTime` Class to distinguish between native DateTime Class.
 
 ```php
-use EasyBanglaDate\Types\DateTime as EnDateTime;
+use BanglaDatetimeFormat\Types\DateTime as EnDateTime;
 ```
 
 ## Methods/Features
 
-Both `EasyBanglaDate\Types\DateTime` and `EasyBanglaDate\Types\BnDateTime` has the member functions as native DateTime class.
+Both `BanglaDatetimeFormat\Types\DateTime` and `BanglaDatetimeFormat\Types\BnDateTime` has the member functions as native DateTime class.
 
 ##### DateTime
 * you can use `enFormat` function to get output in english.
 
 ##### BnDateTime
-* `EasyBanglaDate\Types\BnDateTime` got extra method setMorning to define a hour for start of day. By default day start at 6.
+* `BanglaDatetimeFormat\Types\BnDateTime` got extra method setMorning to define a hour for start of day. By default day start at 6.
 * Along with all format options of native DateTime class, we have extra option `b` which will print ('ভোর', 'সকাল', 'দুপুর', 'বিকাল', 'সন্ধ্যা', 'রাত')
 * Use `setDate($year, $month, $day)` to set bengali date
-* `getDateTime` method will return object of `EasyBanglaDate\Types\DateTime` for current object.
+* `getDateTime` method will return object of `BanglaDatetimeFormat\Types\DateTime` for current object.
 
 
 ## Cookbook
@@ -90,7 +90,7 @@ Both `EasyBanglaDate\Types\DateTime` and `EasyBanglaDate\Types\BnDateTime` has t
 
 ```php
 <?php
-use EasyBanglaDate\Types\DateTime;
+use BanglaDatetimeFormat\Types\DateTime;
 
 require 'autoload.php'
 
@@ -104,7 +104,7 @@ echo $date->format('l jS F Y b h:i:s');
 
 ```php
 <?php
-use EasyBanglaDate\Types\DateTime;
+use BanglaDatetimeFormat\Types\DateTime;
 
 require 'autoload.php'
 
@@ -118,7 +118,7 @@ echo $date->enFormat('l jS F Y b h:i:s');
 
 ```php
 <?php
-use EasyBanglaDate\Types\BnDateTime;
+use BanglaDatetimeFormat\Types\BnDateTime;
 
 require 'autoload.php'
 
@@ -132,7 +132,7 @@ echo $bongabda->format('l jS F Y b h:i:s');
 
 ```php
 <?php
-use EasyBanglaDate\Types\BnDateTime;
+use BanglaDatetimeFormat\Types\BnDateTime;
 
 require 'autoload.php'
 
@@ -150,7 +150,7 @@ echo $bongabda->getDateTime()->enFormat('l jS F Y h:i:s');
 
 ## Contributing to Library
 
-If you find a bug or want to add a feature to EasyBanglaDate, great! In order to make it easier and quicker for me to verify and merge changes in, it would be amazing if you could follow these few basic steps:
+If you find a bug or want to add a feature to BanglaDatetimeFormat, great! In order to make it easier and quicker for me to verify and merge changes in, it would be amazing if you could follow these few basic steps:
 
 1. Fork the project.
 2. **Branch out into a new branch. `git checkout -b name_of_new_feature_or_bug`**

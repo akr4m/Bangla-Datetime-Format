@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the EasyBanglaDate package.
+ * This file is part of the BanglaDatetimeFormat package.
  *
  * Copyright (c) 2015 Roni Saha
  *
@@ -10,10 +10,10 @@
  */
 
 
-namespace EasyBanglaDateTests\Types;
+namespace BanglaDatetimeFormatTests\Types;
 
-use EasyBanglaDateTests\Utils\CsvFileIterator;
-use EasyBanglaDate\Types\BnDateTime;
+use BanglaDatetimeFormatTests\Utils\CsvFileIterator;
+use BanglaDatetimeFormat\Types\BnDateTime;
 use PHPUnit\Framework\TestCase;
 
 class BnDateTimeTest extends TestCase
@@ -79,7 +79,7 @@ class BnDateTimeTest extends TestCase
     {
         $dateTime = new \DateTime('now');
         $bnDateTime = BnDateTime::create($dateTime);
-        $this->assertInstanceOf('EasyBanglaDate\Types\BnDateTime', $bnDateTime);
+        $this->assertInstanceOf('BanglaDatetimeFormat\Types\BnDateTime', $bnDateTime);
         $this->assertEquals($bnDateTime->getTimestamp(), $dateTime->getTimestamp());
     }
 
@@ -87,7 +87,7 @@ class BnDateTimeTest extends TestCase
     {
         $time = time();
         $bnDateTime = BnDateTime::create($time);
-        $this->assertInstanceOf('EasyBanglaDate\Types\BnDateTime', $bnDateTime);
+        $this->assertInstanceOf('BanglaDatetimeFormat\Types\BnDateTime', $bnDateTime);
         $this->assertEquals($bnDateTime->getTimestamp(), $time);
     }
 
@@ -98,7 +98,7 @@ class BnDateTimeTest extends TestCase
     {
         $invalidTimeString = 'invalid';
         $bnDateTime = BnDateTime::create($invalidTimeString);
-        $this->assertInstanceOf('EasyBanglaDate\Types\BnDateTime', $bnDateTime);
+        $this->assertInstanceOf('BanglaDatetimeFormat\Types\BnDateTime', $bnDateTime);
     }
 
     /**

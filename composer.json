@@ -1,39 +1,43 @@
 {
-    "name": "ronisaha/easy-bangla-date",
-    "type": "library",
-    "description": "Extended DateTime Class For Bangla Date and Time",
-    "keywords": ["Bangla DateTime", "Bangla Date", "Bangla"],
-    "license": "MIT",
-    "homepage": "http://ronisaha.github.io/easy-bangla-date/",
-    "authors": [
-        {
-            "name": "Roni Saha",
-            "email": "roni.cse@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/ronisaha/easy-bangla-date/issues",
-        "source": "https://github.com/ronisaha/easy-bangla-date"
-    },
-    "require": {
-        "php": ">=5.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5",
-        "satooshi/php-coveralls": "^0.6"
-    },
-    "autoload": {
-        "psr-4": {
-            "EasyBanglaDate\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": { "EasyBanglaDateTests\\": "Tests/" }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        }
+  "name": "akr4m/Bangla-Datetime-Format",
+  "type": "library",
+  "description": "Extended DateTime Class For Bangla Date and Time",
+  "keywords": [
+    "Bangla DateTime",
+    "Bangla Date",
+    "Bangla"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "AkrAm Khan",
+      "email": "akr4m.kh@gmail.com"
     }
+  ],
+  "support": {
+    "issues": "https://github.com/akr4m/Bangla-Datetime-Format/issues",
+    "source": "https://github.com/akr4m/Bangla-Datetime-Format"
+  },
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5",
+    "satooshi/php-coveralls": "^0.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "BanglaDatetimeFormat\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BanglaDatetimeFormatTests\\": "Tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }
